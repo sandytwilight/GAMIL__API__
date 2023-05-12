@@ -1,0 +1,25 @@
+{
+    "rules": {
+        {
+            "conditions": [
+                {
+                    "field": "From",
+                    "predicate": "contains",
+                    "value": "example.com"
+                },
+                {
+                    "field": "Subject",
+                    "predicate": "equals",
+                    "value": "Important"
+                }
+            ],
+            "predicate": "All",
+            "actions": [
+                {
+                    "action": "mark_as_read"
+                },
+                {
+                    "action": "move",
+                    "value": "Important"
+                }
+            ]
